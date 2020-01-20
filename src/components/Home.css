@@ -1,22 +1,88 @@
-.jumbotron {
-    margin-bottom: 4em;
+div {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
-.person-wrapper {
-    margin-bottom: 2em;
+.left-half {
+    background-color: black !important;
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-.profile-pic {
-    width: 50%;
+.nav-buttons {
+    border-radius: 5px;
+    border-color: white;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60%;
+    display: block;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    text-decoration-line: none;
 }
 
-.btn-primary {
-    background-image: none;
-    border: none;
-    border-radius: 0;
-    background-color: grey;
+.nav-buttons:hover {
+    background-color: white;
+    color: black;
 }
 
-h3 {
-    margin-bottom: 1em;
+.icons {
+    height: 50px;
+    margin-left: 15%;
+    margin-top: 90%;
+    display: inline-block;
 }
+
+.contact {
+    color: white;
+    text-align: center;
+    margin-top: 30%;
+    border-radius: 5px;
+    border-color: white;
+}
+
+.right-half {
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.desk-pic {
+    height: 100%;
+}
+
+.name {
+    color: white;
+    font-size: 80px;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+}
+
+.intro {
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 55%;
+    left: 40%;
+    transform: translate(-35%, -50%);
+}
+
+.intro2 {
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 59%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+

@@ -6,20 +6,36 @@ import './Home.css'
 export default class Home extends Component {
     render() {
         return (
-            <Container>
-                <Jumbotron>
-                    <h2>Ken Johnson</h2>
-                    <p>Second year Computer Engineering Student</p>
-                    <Link to="/about">
-                    <Button baStyle="primary">About</Button>
+            <div className="bodyb">
+                <div className="left-half">
+
+                    <Link to="/about" style={{ textDecoration: 'none' }}>
+                        <Button className="nav-buttons">About</Button>
                     </Link>
-                </Jumbotron>
-                <Row className="show-grid text-center">
-                    <Col xs={12} sm={4} className="person-wrapper">
-                        <Image src="assets/Profile-pic.jpg" roundedCircle className="profile-pic" />
-                    </Col>
-                </Row>
-            </Container>
+                    <Link to="/projects" style={{ textDecoration: 'none' }}>
+                        <Button className="nav-buttons">Projects</Button>
+                    </Link>
+
+                    <a href="https://www.linkedin.com/in/ken-john/" target="_blank">
+                        <Image src="assets/linkedin.png" className="icons"/>
+                    </a>
+                    <a href="https://github.com/Kojon74" target="_blank">
+                        <Image src="assets/github.png" className="icons"/>
+                    </a>
+
+                    <p className="contact">kenjohnson0704@gmail.com</p>
+                    
+                    
+                </div>
+                <div className="right-half">
+                    <Image src="assets/desk-pic.jpg" className="desk-pic" />
+                    <h2 className="name">Ken Johnson</h2>
+                    <p className="intro">Computer Engineering Student - Software Developer</p>
+                    
+                </div>
+            </div>
+            
+            
         )
     }
 }

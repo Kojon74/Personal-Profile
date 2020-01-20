@@ -6,7 +6,7 @@ export default class About extends Component {
     render() {
         return (
             <div>
-                <Image src="assets/Yokohama-wallpaper.jpg" className="yokohama-wallpaper" />
+                <Image src="assets/Yokohama-wallpaper.jpg" fluid className="yokohama-wallpaper" />
                 <Container>
                     <Col xs={12} sm={8} smOffset={2}>
 

@@ -6,10 +6,10 @@ import './CustomNavbar.css';
 export default class CustomNavbar extends Component {
     render() {
         return (
-            <Navbar className="navbar" bg="light" collapseOnSelect>
-                <Navbar.Brand>
-                    <Link className="ken-johnson" to="/">Ken Johnson</Link>
-                </Navbar.Brand>
+            <Navbar className="navbar" collapseOnSelect>
+                <Nav.Item>
+                    <Nav.Link className="ken-johnson" href="/" eventKey="1">Ken Johnson</Nav.Link>
+                </Nav.Item>
                 <Navbar.Toggle />
                 <Navbar.Collapse>
                     <Nav pullRight>
@@ -21,6 +21,9 @@ export default class CustomNavbar extends Component {
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link href="/projects" eventKey="3">Projects</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link href="/timeline" eventKey="4">Timeline</Nav.Link>
                         </Nav.Item>
                     </Nav>
                 </Navbar.Collapse>

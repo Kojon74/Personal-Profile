@@ -5,6 +5,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Projects from './components/Projects';
 import Navbar from './components/CustomNavbar';
+import Timeline from './components/MyTimeline'
 
 class App extends Component {
     render() {
@@ -15,6 +16,7 @@ class App extends Component {
                     <Route exact path="/" component={Home} />
                     <Route exact path="/about" component={About} />
                     <Route exact path="/projects" component={Projects} />
+                    <Route exact path="/timeline" component={Timeline} />
                 </div>
             </Router>
         );
