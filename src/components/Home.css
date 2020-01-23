@@ -20,10 +20,6 @@ div {
     margin-right: auto;
     margin-top: 60%;
     display: block;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-    text-decoration: none;
-    text-decoration-line: none;
 }
 
 .nav-buttons:hover {

@@ -3,5 +3,32 @@
 }
 
 .ken-johnson {
+    color: white;
+    font-size: x-large;
+    font-weight: 400;
+}
+
+.ken-johnson:hover {
+    color: grey;
+}
+
+.nav-buttons-navbar {
+    border-radius: 5px;
+    border-color: white;
+    background-color: black;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+}
+
+.nav-buttons-navbar:hover {
+    background-color: white;
     color: black;
+    border-color: white;
+}
+
+.icons-navbar {
+    height: 50px;
+    margin-top: auto;
+    margin-right: 30px;
 }
