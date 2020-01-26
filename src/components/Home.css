@@ -12,19 +12,34 @@ div {
     left: 0;
 }
 
-.nav-buttons {
-    border-radius: 5px;
-    border-color: white;
-    background-color: black;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 60%;
-    display: block;
+.nav-links {
+  display: block;
+  height: 45px !important;
+  line-height: 40px;
+  width: 100px !important;
+  text-align: center;
+  border-radius: 8px;
+  border: solid;
+  border-width: thin;
+  color: white;
+  border-color: white;
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60%;
 }
 
-.nav-buttons:hover {
-    background-color: white;
-    color: black;
+.nav-links:hover {
+  background-color: white;
+  color: black;
+  font-weight: 500;
+  border-color: white;
+}
+
+.nav-links {
+  color: white;
+  width: 100%;
+  height: 100%;
 }
 
 .icons {

@@ -8,14 +8,9 @@ export default class Home extends Component {
         return (
             <div className="bodyb">
                 <div className="left-half">
-
-                    <Link to="/about" style={{ textDecoration: 'none' }}>
-                        <Button className="nav-buttons">About</Button>
-                    </Link>
-                    <Link to="/projects" style={{ textDecoration: 'none' }}>
-                        <Button className="nav-buttons">Projects</Button>
-                    </Link>
-
+                    <Link className="nav-links" to="/about" style={{ textDecoration: 'none' }}>About</Link>
+                    <Link className="nav-links" to="/projects" style={{ textDecoration: 'none' }}>Projects</Link>
+              
                     <a href="https://www.linkedin.com/in/ken-john/" target="_blank">
                         <Image src="assets/linkedin.png" className="icons"/>
                     </a>
