@@ -46,7 +46,7 @@ body {
   content: '';
   width: 10px;
   height: 10px;
-  border: 2px solid #aaa;
+  border: 2px solid var(--theme-color);
   position: absolute;
   border-radius: 50%;
   background: black;
@@ -70,13 +70,14 @@ body {
 }
 
 .title {
+  margin-top: 0px;
   color: white;
   font-size: 25px;
   font-weight: 300;
 }
 
 .location {
-  color: #ccc;
+  color: var(--theme-color);
   font-size: 20px;
 }
 

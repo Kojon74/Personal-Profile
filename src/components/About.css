@@ -1,0 +1,60 @@
+.yokohama-wallpaper {
+  position: absolute;
+  left: 0;
+}
+
+.about-me-container {
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 20px;
+  max-width: 490px;
+  z-index: 1;
+  border-style: dashed;
+  border-width: thick;
+  border-radius: 15px;
+  border-color: white;
+}
+
+.about-me-container::after {
+  content: "";
+  background-color: black;
+  opacity: 0.2;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  border-radius: 5px;
+
+}
+
+.about-me {
+  margin: 5px 5px 5px 5px;
+  color: var(--theme-color);
+  font: 500 40px sans-serif;
+  z-index: 2;
+}
+
+.details {
+  margin: 5px 5px 5px 5px;
+
+  color: white;
+  font: 20px sans-serif;
+
+  z-index: 2;
+}
+
+.about-carousel {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  height: 500px;
+  max-width: 50%;
+  border-radius: 10px;
+  
+}
+
+.about-carousel-images {
+  width: 100%;
+}

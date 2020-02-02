@@ -9,7 +9,8 @@
 }
 
 .ken-johnson:hover {
-    color: grey;
+    color: var(--theme-color);
+    transition: 1s;
 }
 
 .nav-links-navbar {
@@ -28,10 +29,11 @@
 }
 
 .nav-links-navbar:hover {
-    background-color: white;
+    background-color: var(--theme-color);
     color: black;
     font-weight: 500;
-    border-color: white;
+    border-color: black;
+    transition: 1s;
 }
 
 .icons-navbar {
