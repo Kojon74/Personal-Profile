@@ -6,9 +6,9 @@ export default class About extends Component {
   render() {
     return (
       <div>
-        <Image className="yokohama-wallpaper" src="Personal-Profile/assets/Yokohama-wallpaper.jpg" fluid />
+        <Image className="yokohama-wallpaper" src="assets/Yokohama-wallpaper.jpg" fluid />
         <div className="about-me-container">
-          <div className="about-me">Leading by example hi</div>
+          <div className="about-me">Leading by example</div>
           <div className="details">On top of being an older brother to my three siblings, I have had many opportunities 
             throughout my life to be able to influence others with the decisions they make. From being a robotics, cross 
             country and tennis team captain to friend, I believe that it is my responsibility to pass down my knowledge 
