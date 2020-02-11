@@ -8,7 +8,7 @@ export default class About extends Component {
       <div>
         <Image className="yokohama-wallpaper" src="assets/Yokohama-wallpaper.jpg" fluid />
         <div className="about-me-container">
-          <div className="about-me"><span className="highlighted-text">Success</span> is achieved by 
+          <div className="about-me"><span className="highlighted-text">Success</span> is achieved by  
             <span className="highlighted-text">ordinary</span> people with <span className="highlighted-text">
             extrordinary</span> determination
           </div>
