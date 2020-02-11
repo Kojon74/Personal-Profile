@@ -8,13 +8,11 @@ export default class About extends Component {
       <div>
         <Image className="yokohama-wallpaper" src="assets/Yokohama-wallpaper.jpg" fluid />
         <div className="about-me-container">
-          <div className="about-me">Leading by example</div>
-          <div className="details">On top of being an older brother to my three siblings, I have had many opportunities 
-            throughout my life to be able to influence others with the decisions they make. From being a robotics, cross 
-            country and tennis team captain to friend, I believe that it is my responsibility to pass down my knowledge 
-            to those around me so that they can succeed and learn from the mistakes I made. Being active with sports has 
-            taught me a lot about determination and being able to stay calm and work through problems even in the toughest 
-            situations. I was born and raised in Japan but moved to Canada to pursue a career in software development.
+          <div className="about-me"><span className="highlighted-text">Success</span> is achieved by 
+            <span className="highlighted-text">ordinary</span> people with <span className="highlighted-text">
+            extrordinary</span> determination
+          </div>
+          <div className="details">I believe that my greatest asset comes with my exceptional determination to achieve my goals. As an older brother to three siblings, I try as hard as I can to help them with school and extra curricular activities even when I am half-way accross the planet, by giving them advice from the mistakes I have made as well as my success, so that they can do better than I did. I try and take this approach with me wherever I go, from leading cross country, tennis and robotics teams, to studying/hanging out with my friends. Completing these tasks are often very challenging and time consuming, but at the end of the day, it is always worth it to have known I pushed myself a little further to improve myself and those around me.
           </div>
         </div>
         <Carousel className="about-carousel" controls={false} indicators={false} pauseOnHover={false}>

@@ -31,9 +31,14 @@
 
 .about-me {
   margin: 5px 5px 5px 5px;
-  color: var(--theme-color);
-  font: 500 40px sans-serif;
+  color: black;
+  font: 500 27px sans-serif;
+  text-align: center;
   z-index: 2;
+}
+
+.highlighted-text {
+  color: var(--theme-color);
 }
 
 .details {

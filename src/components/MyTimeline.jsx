@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Carousel } from 'react-bootstrap'
 import './MyTimeline.css'
 
 export default class MyTimeline extends Component {
@@ -7,7 +8,7 @@ export default class MyTimeline extends Component {
       <div class="container">
       <h1 class="page-title">Technical Experience</h1>
         <ul>
-          <li >
+          <li>
             <span></span>
             <div class="title">Personal Portfolio</div>
             <div class="location">Personal Project</div>
@@ -20,7 +21,7 @@ export default class MyTimeline extends Component {
               <span>January 2020<br />- Present</span>
             </div>
           </li>
-          <li >
+          <li>
             <span></span>
             <div class="title">"Mood" Web Application</div>
             <div class="location">NWHacks</div>
@@ -39,7 +40,7 @@ export default class MyTimeline extends Component {
             </div>
             
           </li>
-          <li >
+          <li>
             <span></span>
             <div class="title">Front End Development</div>
             <div class="location">UBC Unmanned Aitcraft Systems</div>
@@ -54,7 +55,7 @@ export default class MyTimeline extends Component {
               <span>November 2019<br /> - Present</span>
             </div>
           </li>
-          <li >
+          <li>
             <span></span>
             <div class="title">Survey Optimization Algorithm</div>
             <div class="location">UBC Unmanned Aitcraft Systems</div>
@@ -70,7 +71,7 @@ export default class MyTimeline extends Component {
               <span>September 2019<br /> - November 2019</span>
             </div>
           </li>
-          <li >
+          <li>
             <span></span>
             <div class="title">Raspberry Pi Smart Mirror</div>
             <div class="location">Personal Project</div>

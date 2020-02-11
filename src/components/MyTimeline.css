@@ -63,6 +63,16 @@ body {
   text-align: right;
 }
 
+.container ul li .projects-carousel .projects-carousel-images {
+  position: absolute;
+  left: -100px;
+}
+
+.projects-carousel-images {
+  width: 300px;
+  left: -370px;
+}
+
 .page-title {
   text-align: center;
   margin-top: 40px;
