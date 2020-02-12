@@ -25,6 +25,16 @@ div {
   align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+  .left-half {
+    width: 0%;
+  }
+
+  .right-half {
+    width: 100%;
+  }
+}
+
 @keyframes slide {
   0% {
     width: 100%;
@@ -71,14 +81,15 @@ div {
 
 .media {
   display: flex;
+  height:20%;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .icons-container {
   display: flex;
   width: 100%;
   justify-content: space-around;
-  flex: 1;
 }
 
 .icons {
@@ -96,7 +107,6 @@ div {
   border-radius: 5px;
   border-color: white;
   font-size: 1.3vw;
-  flex: 1;
 }
 
 .right-half {
