@@ -1,62 +1,15 @@
-div {
+.home-section {
   --time-slide: 2s;
   --time-name: calc(var(--time-slide) + 4s);
   --time-name-color: calc(var(--time-slide) + 2s);
   --time-intro: calc(var(--time-name) + 2s);
   --time-nav: calc(var(--time-intro) + 3s);
+  position: relative;
+  height: 100vh;
+  width: 100vw;
   max-width: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
-}
-
-.left-half {
-  animation: slide var(--time-slide);
-  background-color: black !important;
-  width: 20%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-content: center;
-  align-items: center;
-}
-
-@media screen and (max-width: 768px) {
-  .left-half {
-    width: 0%;
-  }
-
-  .right-half {
-    width: 100%;
-  }
-}
-
-@keyframes slide {
-  0% {
-    width: 100%;
-  }
-  100% {
-    width: 20%;
-  }
-}
-
-.nav-links {
-  animation: nav-appear var(--time-nav);
-  display: block;
-  height: 45px !important;
-  line-height: 40px;
-  width: 100px !important;
-  text-align: center;
-  border-radius: 8px;
-  border: solid;
-  border-width: thin;
-  color: white;
-  border-color: white;
-  background-color: black;
 }
 
 @keyframes nav-appear {
@@ -71,54 +24,13 @@ div {
   }
 }
 
-.nav-links:hover {
-  background-color: var(--theme-color);
-  color: black;
-  font-weight: 500;
-  border-color: black;
-  transition: 1s;
-}
-
-.media {
-  display: flex;
-  height:20%;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.icons-container {
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-}
-
-.icons {
-  animation: nav-appear var(--time-nav);
-  height: 50px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  display: inline-block;
-}
-
-.contact {
-  animation: nav-appear var(--time-nav);
-  color: white;
-  text-align: center;
-  border-radius: 5px;
-  border-color: white;
-  font-size: 1.3vw;
-}
-
-.right-half {
-  width: 80%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
 .desk-pic {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .name {
@@ -126,9 +38,10 @@ div {
     color 5s var(--time-name-color) ease infinite alternate;
   color: white;
   font-size: 80px;
-  font-size: 4vw;
+  font-size: 6vw;
+  letter-spacing: 3px;
   position: absolute;
-  top: 48%;
+  top: 54%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: inline-block;
@@ -141,7 +54,7 @@ div {
   font-size: 25px;
   font-size: 1.8vw;
   position: absolute;
-  top: 55%;
+  top: 60%;
   left: 43%;
   transform: translate(-35%, -50%);
 }
