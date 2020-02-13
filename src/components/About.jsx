@@ -5,8 +5,8 @@ import './About.css';
 export default class About extends Component {
   render() {
     return (
-      <div>
-        <Image className="yokohama-wallpaper" src="assets/Yokohama-wallpaper.jpg" fluid />
+      <div className="about-section" id="about">
+        <Image className="yokohama-wallpaper" src="assets/Yokohama-wallpaper.jpg" />
         <div className="about-me-container">
           <div className="about-me"><span className="highlighted-text">Success</span> is achieved by  
             <span className="highlighted-text"> ordinary</span> people with <span className="highlighted-text">

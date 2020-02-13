@@ -1,5 +1,10 @@
-.navbar {
+.navbar-section {
     background-color: black;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    z-index: 100;
 }
 
 .ken-johnson {
@@ -13,31 +18,65 @@
     transition: 1s;
 }
 
+.nav-links-container {
+    display: flex;
+    justify-content: space-around;
+    width: 55%;
+}
+
 .nav-links-navbar {
     line-height: 40px;
     width: 100px;
     text-align: center;
     border-radius: 8px;
     border: solid;
-    border-width: thin;
-    color: white;
+    border-width: 2px;
+    color: white !important;
     border-color: white;
     background-color: black;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 50px;
+    cursor: pointer;
 }
 
 .nav-links-navbar:hover {
     background-color: var(--theme-color);
-    color: black;
+    color: black !important;
     font-weight: 500;
     border-color: black;
     transition: 1s;
+}
+
+.nav-links-container > .active {
+    border-color: var(--theme-color);
+    border-width: 2px;
 }
 
 .icons-navbar {
     height: 50px;
     margin-top: auto;
     margin-right: 30px;
+}
+
+.burger {
+    display: none;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links-container {
+        position: absolute;
+        right: 0px;
+        height: 91vh;
+        top: 9vh;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+    }
 }
