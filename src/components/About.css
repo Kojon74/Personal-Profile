@@ -4,6 +4,9 @@
 }
 
 .yokohama-wallpaper {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   height: 100%;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -11,7 +14,7 @@
 
 .about-me-container {
   position: absolute;
-  left: 20px;
+  left: 5vw;
   top: 20px;
   max-width: 490px;
   z-index: 1;
@@ -58,7 +61,7 @@
 
 .about-carousel {
   position: absolute;
-  right: 20px;
+  right: 60px;
   bottom: 50px;
   max-width: 50vw;
   border-radius: 10px;
