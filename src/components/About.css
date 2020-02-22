@@ -70,3 +70,12 @@
 .about-carousel-images {
   height: 50vh;
 }
+
+@media screen and (max-width: 768px) {
+  .about-me-container::after {
+    opacity: 0.5;
+  }
+  .about-carousel {
+    display: none;
+  }
+}

@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React, { Component } from 'react'
 import { Carousel } from 'react-bootstrap'
 import './Projects.css'
@@ -12,11 +13,24 @@ export default class Projects extends Component {
             <span></span>
             <div class="title">Personal Portfolio</div>
             <div class="location">Personal Project</div>
-            <div class="info">Created this personal portfolio website for job application purposes, and to gain experience with front end web development. 
-              Developed from scratch using ReactJS, HTML and CSS.</div>
-            <div class="website"></div>
+            <div class="info">Created this personal portfolio website for job application purposes, and to gain experience with 
+              front end web development. Developed from scratch using ReactJS, HTML and CSS.</div>
+            <a class="website" href="https://github.com/Kojon74/Personal-Profile" target="_blank">https://github.com/Kojon74/Personal-Profile</a>
             <div class="date">
               <span>January 2020<br />- Present</span>
+            </div>
+          </li>
+          <li>
+            <span></span>
+            <div class="title">Image Filter's and GIF's</div>
+            <div class="location">Class Project</div>
+            <div class="info">Developed multiple programs in C++, each adding on to the last and more difficult. Created programs that added filters such as black and white, watermark, and sketch, breaking the image apart into multiple small blocks and rearrangind them to create patterns, and designed flood fill programs that created an animated gif of the image changing, and applied these to input PNG images.</div>
+            <div className="project-image-container">
+              <img className="project-image" src="assets/black-white.png"/>
+              <img className="project-image" src="assets/watermark.png"/>
+            </div>
+            <div class="date">
+              <span>January 2020<br />- April 2020</span>
             </div>
           </li>
           <li>
@@ -32,7 +46,11 @@ export default class Projects extends Component {
               end using JavaScript, HTML, CSS and React Bootstrap. Each one of us significantly improved our 
               web development skills within these 24 hours, learning from each other as well as experienced 
               mentors who were at the event.</div>
-            <div class="website"></div>
+            <a className="website" href="https://github.com/shadeying/Mood" target="_blank">https://github.com/shadeying/Mood</a>
+            <div className="project-image-container">
+              <img className="project-image" src="assets/mood-1.jpg"/>
+              <img className="project-image" src="assets/mood-2.jpg"/>
+            </div>
             <div class="date">
               <span>January 2020</span>
             </div>
@@ -49,6 +67,9 @@ export default class Projects extends Component {
               route the drone will take on a map. The user can then either send the drone off to start or it 
               can re-calculate a new path.</div>
             <div class="website"></div>
+            <div className="project-image-container">
+              <img className="project-image" src="assets/UAS-frontend.png"/>
+            </div>
             <div class="date">
               <span>November 2019<br /> - Present</span>
             </div>
@@ -64,7 +85,11 @@ export default class Projects extends Component {
               and had a limited amount of time to calculate this shortest path. The implemented 
               method provided a great compromise between efficiency and functionality, yielding a path 
               that is very close to, if not the shortest path between the points in a matter of seconds.</div>
-            <div class="website"></div>
+            <a className="website" href="https://github.com/Kojon74/Survey" target="_blank">https://github.com/Kojon74/Survey</a>
+            <div className="project-image-container">
+              <img className="project-image" src="assets/UAS-survey-1.JPG"/>
+              <img className="project-image" src="assets/UAS-survey-2.JPG"/>
+            </div>
             <div class="date">
               <span>September 2019<br /> - November 2019</span>
             </div>
@@ -80,6 +105,8 @@ export default class Projects extends Component {
               frame using a circular saw and modifying the "Magic Mirror" software from a GitHub repository to 
               match my needs. Although the final product wasn't perfect, it was an amazing experience.</div>
             <div class="website"></div>
+            <div className="project-image-container">
+            </div>
             <div class="date">
               <span>December 2019<br /> - January 2020</span>
             </div>

@@ -38,7 +38,7 @@
     color 5s var(--time-name-color) ease infinite alternate;
   color: white;
   font-size: 80px;
-  font-size: 6vw;
+  font-size: 7vw;
   letter-spacing: 3px;
   position: absolute;
   top: 54%;
@@ -46,17 +46,60 @@
   transform: translate(-50%, -50%);
   display: inline-block;
   justify-content: center;
+  width: 80%;
+  text-align: center;
 }
 
-.intro {
+.intro-container {
+  height: auto;
+  width: auto;
+  position: absolute;
+  top: 63%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  display: inline-block;
+
   animation: appear var(--time-intro) ease;
   color: white;
   font-size: 25px;
-  font-size: 1.8vw;
+  font-size: 3.5vw;
+  
+}
+
+.intro-1 {
+  display: inline;
+}
+
+.intro {
+  display: inline;
+  position: relative;
+  margin-left: 5px;
+  color: var(--theme-color);
+  
+}
+
+.intro::after {
+  content: "";
   position: absolute;
-  top: 60%;
-  left: 43%;
-  transform: translate(-35%, -50%);
+  width: 1px;
+  height: 80%;
+  border-right: 2px solid white;
+  margin-top: 1vw;
+  margin-left: 3px;
+  animation: blink 1s infinite linear;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  } 50% {
+    opacity: 0;
+  } 51% {
+    opacity: 1;
+  } 100% {
+    opacity: 1;
+  }
 }
 
 @keyframes appear {
@@ -80,12 +123,29 @@
   }
 }
 
-.intro2 {
-    color: white;
-    font-size: 25px;
-    position: absolute;
-    top: 59%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+@media screen and (max-width: 768px) {
+  .name {
+    top: 32%;
+    left: 51%;
+    font-size: 10vw;
+  }
 
+  .intro-1 {
+    display: block;
+    margin: auto;
+  }
+
+  .intro-container {
+    top: 50%;
+    font-size: 4vw;
+  }
+
+  .intro-1 {
+    display: block;
+    text-align: center;
+  }
+
+  .intro {
+    text-align: center;
+  }
+}
