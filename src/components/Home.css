@@ -57,13 +57,13 @@
   top: 63%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 40%;
+  width: 41%;
   display: inline-block;
 
   animation: appear var(--time-intro) ease;
   color: white;
   font-size: 25px;
-  font-size: 3.5vw;
+  font-size: 3.3vw;
   
 }
 
@@ -74,7 +74,7 @@
 .intro {
   display: inline;
   position: relative;
-  margin-left: 5px;
+  margin-left: 0px;
   color: var(--theme-color);
   
 }
