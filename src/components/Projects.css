@@ -242,6 +242,24 @@
     font-size: 18px;
     margin: 5px 0px 5px 0px;
     width: 100%;
+    font-weight: bold;
+  }
+
+  .location {
+    font-weight: 300;
+    margin: 5px 0px 10px 0px;
+  }
+
+  .project-skills {
+    margin-left: 0px;
+  }
+
+  .info {
+    margin-left: 0px;
+  }
+
+  .website {
+    margin-left: 0;
   }
 
   .project-image-container {

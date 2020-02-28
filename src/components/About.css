@@ -74,10 +74,10 @@
 
 @media screen and (max-width: 768px) {
   .about-me-container {
-    top: 50px;
+    top: 30px;
     left: 50%;
     transform: translateX(-50%);
-    width: 80%;
+    width: 90%;
   }
   .about-me-container::after {
     opacity: 0.5;
