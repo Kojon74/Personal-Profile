@@ -5,3 +5,13 @@
   color: white;
   margin-bottom: 50px;
 }
+
+@media screen and (max-width: 768px) {
+  .footer-section {
+    flex-direction: column;
+  }
+
+  .e-mail {
+    margin-bottom: 30px;
+  }
+}
