@@ -51,6 +51,7 @@ export default class Projects extends Component {
     const kamino = (this.state.Java || this.state.Git);
     const riscMachine = (this.state.Git);
     const surveyOpti = (this.state.Python || this.state.Git);
+    const calculator = (this.state.Swift || this.state.iOSApp || this.state.Git);
     return (
       <div class="projects-section" id="projects">
         <h1 class="page-title">Technical Experience</h1>
@@ -69,30 +70,16 @@ export default class Projects extends Component {
         </div>
         <ul>
           {/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/}
-          <li className={ personalPortfolio ? "project-item highlight" : "project-item" }>
-            <span></span>
-            <div class="title">Personal Portfolio</div>
-            <div class="location">Personal Project</div>
-            <div className="project-skills"><strong>Skills:</strong> JavaScript, CSS, HTML, ReactJS, Website deployment, CLI, GitHub</div>
-            <div class="info">Created this personal portfolio website for job application purposes, and to gain experience with 
-              front end web development. Developed from scratch using ReactJS, HTML and CSS.</div>
-            <a className={ personalPortfolio ? "website-highlighted" : "website" } href="https://github.com/Kojon74/Personal-Profile" target="_blank">https://github.com/Kojon74/Personal-Profile</a>
-            <div class="date">
-              <span>Present -<br /> January 2020</span>
-            </div>
-          </li>
-          {/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/}
           <li className={ uasFrontEnd ? "project-item highlight" : "project-item" }>
             <span></span>
             <div class="title">Front End Development</div>
             <div class="location">Student Design Team - UBC Unmanned Aircraft Systems (UAS)</div>
             <div className="project-skills"><strong>Skills:</strong> JavaScript, CSS, HTML, ReactJS, Docker, CLI, GitLab</div>
             <div class="info">Integrated the survey optimization algorithm (referred to below) 
-              with the UBC UAS front end web server using JavaScript, HTML, CSS, 
-              and ReactJS. Designed 
+              with the UBC UAS front end web server using React. Designed 
               an interface allowing users to call the survey optimization method which then displays the 
               route the drone will take on a map. The user can then either send the drone off to start or it 
-              can re-calculate a new path.</div>
+              can re-calculate a new path. Worked with Docker to run our server on as well as GitLab as our main means of source control.</div>
             <div className="project-image-container">
               <img className="project-image" src="assets/Projects/UAS-frontend.png" onClick={() => {this.handleTrue("show"); this.setModal("assets/Projects/UAS-frontend.png", "Front end design - in progress");}}/>
             </div>
@@ -101,12 +88,25 @@ export default class Projects extends Component {
             </div>
           </li>
           {/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/}
+          <li className={ personalPortfolio ? "project-item highlight" : "project-item" }>
+            <span></span>
+            <div class="title">Personal Portfolio</div>
+            <div class="location">Personal Project</div>
+            <div className="project-skills"><strong>Skills:</strong> JavaScript, CSS, HTML, ReactJS, Website deployment, CLI, GitHub</div>
+            <div class="info">Created this personal portfolio website for job application purposes, and to gain experience with 
+              front end web development. Developed from scratch using ReactJS and deployed using Netflify.</div>
+            <a className={ personalPortfolio ? "website-highlighted" : "website" } href="https://github.com/Kojon74/Personal-Profile" target="_blank">https://github.com/Kojon74/Personal-Profile</a>
+            <div class="date">
+              <span>February 2020 -<br /> January 2020</span>
+            </div>
+          </li>
+          {/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/}
           <li className={ imageFilter ? "project-item highlight" : "project-item" }>
             <span></span>
             <div class="title">Image Filter's and GIF's</div>
             <div class="location">Class Project</div>
             <div className="project-skills"><strong>Skills:</strong> C++, CLI (SSH), GDB debugger, Linux server, GitHub</div>
-            <div class="info">Developed multiple programs in C++, each adding on to the last and more difficult. Created programs that added filters such as black and white, watermark, and sketch, breaking the image apart into multiple small blocks and rearrangind them to create patterns, and designed flood fill programs that created an animated gif of the image changing, and applied these to input PNG images.</div>
+            <div class="info">Developed multiple programs in C++, to do with image filtering, rendering and animating. Created programs that added filters such as black and white, watermark, and pencil sketch, programs that split the image apart into multiple small blocks and rearrangind them to create patterns, and designed flood fill programs that created an animated gif of the image changing. Applied these programs to input PNG images.</div>
             <div className="project-image-container">
               <img className="project-image" src="assets/Projects/black-white.png" onClick={() => {this.handleTrue("show"); this.setModal("assets/Projects/black-white.png", "Black and white filter");}}/>
               <img className="project-image" src="assets/Projects/watermark.png" onClick={() => {this.handleTrue("show"); this.setModal("assets/Projects/watermark.png", "Watermark filter");}}/>
@@ -121,7 +121,7 @@ export default class Projects extends Component {
             <div class="title">Dancing Biped</div>
             <div class="location">Class Project</div>
             <div className="project-skills"><strong>Skills:</strong> Python, GitHub, Raspberry Pi, ItsyBitsy, Soldering, Circuits</div>
-            <div class="info">Built a “Dancing Biped” powered by an ItsyBitsy board. Added an LCD screen to display images as well as information, a sonar sensor to detect proximity to object and when to stop, a buzzer to play songs such as the Start Wars theme, and four motors to make up its legs and create six unique dance moves. Programmed everything in CircuitPython with a group of seven people, using GitHub to keep track of all our files. Used Trello as our project management tool to split up the project and work more efficiently.</div>
+            <div class="info">Built a “Dancing Biped” powered by an ItsyBitsy board. Added an LCD screen to display images as well as information, a sonar sensor to detect proximity to object to detect when to stop, a buzzer to play songs such as the Start Wars theme, and four motors to make up its legs and create six unique dance moves. Programmed everything in CircuitPython with a group of seven people, using GitHub to keep track of all our files. Used Trello as our project management tool to split up the project and work more efficiently.</div>
             <div className="project-image-container">
               <img className="project-image" src="assets/Projects/Biped.png" onClick={() => {this.handleTrue("show"); this.setModal("assets/Projects/Biped.png", "Dancing biped");}}/>
             </div>
@@ -233,6 +233,21 @@ export default class Projects extends Component {
             </div>
             <div class="date">
               <span>November 2019 -<br />September 2019</span>
+            </div>
+          </li>
+          {/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/}
+          <li className={ calculator ? "project-item highlight" : "project-item" }>
+            <span></span>
+            <div class="title">iOS Calculator Application</div>
+            <div class="location">Personal Project</div>
+            <div className="project-skills"><strong>Skills:</strong> Swift, iOS App Development, GitHub</div>
+            <div class="info">Developed an advanced calculator application for iOS which could compute complex equations. Inspired by the TI-nspire, functionality and usability were the top priorities. Gained experience working in Swift and with storyboards.</div>
+            <a className={ calculator ? "website-highlighted" : "website" } href="https://github.com/Kojon74/Calculator" target="_blank">https://github.com/Kojon74/Calculator</a>
+            <div className="project-image-container">
+              <img className="project-image" src="assets/Projects/calculator.png" onClick={() => {this.handleTrue("show"); this.setModal("assets/Projects/calculator.png", "iOS Calculator Application");}}/>
+            </div>
+            <div class="date">
+              <span>July 2019 -<br /> May 2019</span>
             </div>
           </li>
           {/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/}
