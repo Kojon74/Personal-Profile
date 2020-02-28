@@ -73,6 +73,7 @@ export default class Projects extends Component {
           <li className={ uasFrontEnd ? "project-item highlight" : "project-item" }>
             <span></span>
             <div class="title">Front End Development</div>
+            <div className="date-mobile">November 2019 - Present</div>
             <div class="location">Student Design Team - UBC Unmanned Aircraft Systems (UAS)</div>
             <div className="project-skills"><strong>Skills:</strong> JavaScript, CSS, HTML, ReactJS, Docker, CLI, GitLab</div>
             <div class="info">Integrated the survey optimization algorithm (referred to below) 
@@ -88,22 +89,10 @@ export default class Projects extends Component {
             </div>
           </li>
           {/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/}
-          <li className={ personalPortfolio ? "project-item highlight" : "project-item" }>
-            <span></span>
-            <div class="title">Personal Portfolio</div>
-            <div class="location">Personal Project</div>
-            <div className="project-skills"><strong>Skills:</strong> JavaScript, CSS, HTML, ReactJS, Website deployment, CLI, GitHub</div>
-            <div class="info">Created this personal portfolio website for job application purposes, and to gain experience with 
-              front end web development. Developed from scratch using ReactJS and deployed using Netflify.</div>
-            <a className={ personalPortfolio ? "website-highlighted" : "website" } href="https://github.com/Kojon74/Personal-Profile" target="_blank">https://github.com/Kojon74/Personal-Profile</a>
-            <div class="date">
-              <span>February 2020 -<br /> January 2020</span>
-            </div>
-          </li>
-          {/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/}
           <li className={ imageFilter ? "project-item highlight" : "project-item" }>
             <span></span>
             <div class="title">Image Filter's and GIF's</div>
+            <div className="date-mobile">January 2020 - March 2020</div>
             <div class="location">Class Project</div>
             <div className="project-skills"><strong>Skills:</strong> C++, CLI (SSH), GDB debugger, Linux server, GitHub</div>
             <div class="info">Developed multiple programs in C++, to do with image filtering, rendering and animating. Created programs that added filters such as black and white, watermark, and pencil sketch, programs that split the image apart into multiple small blocks and rearrangind them to create patterns, and designed flood fill programs that created an animated gif of the image changing. Applied these programs to input PNG images.</div>
@@ -116,9 +105,24 @@ export default class Projects extends Component {
             </div>
           </li>
           {/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/}
+          <li className={ personalPortfolio ? "project-item highlight" : "project-item" }>
+            <span></span>
+            <div class="title">Personal Portfolio</div>
+            <div className="date-mobile">January 2020 - February 2020</div>
+            <div class="location">Personal Project</div>
+            <div className="project-skills"><strong>Skills:</strong> JavaScript, CSS, HTML, ReactJS, Website deployment, CLI, GitHub</div>
+            <div class="info">Created this personal portfolio website for job application purposes, and to gain experience with 
+              front end web development. Developed from scratch using ReactJS and deployed using Netflify.</div>
+            <a className={ personalPortfolio ? "website-highlighted" : "website" } href="https://github.com/Kojon74/Personal-Profile" target="_blank">https://github.com/Kojon74/Personal-Profile</a>
+            <div class="date">
+              <span>February 2020 -<br /> January 2020</span>
+            </div>
+          </li>
+          {/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/}
           <li className={ dancingBiped ? "project-item highlight" : "project-item" }>
             <span></span>
             <div class="title">Dancing Biped</div>
+            <div className="date-mobile">February 2020</div>
             <div class="location">Class Project</div>
             <div className="project-skills"><strong>Skills:</strong> Python, GitHub, Raspberry Pi, ItsyBitsy, Soldering, Circuits</div>
             <div class="info">Built a “Dancing Biped” powered by an ItsyBitsy board. Added an LCD screen to display images as well as information, a sonar sensor to detect proximity to object to detect when to stop, a buzzer to play songs such as the Start Wars theme, and four motors to make up its legs and create six unique dance moves. Programmed everything in CircuitPython with a group of seven people, using GitHub to keep track of all our files. Used Trello as our project management tool to split up the project and work more efficiently.</div>
@@ -133,6 +137,7 @@ export default class Projects extends Component {
           <li className={ mood ? "project-item highlight" : "project-item" }>
             <span></span>
             <div class="title">"Mood" Web Application</div>
+            <div className="date-mobile">January 2020</div>
             <div class="location">Hackathon - NWHacks</div>
             <div className="project-skills"><strong>Skills:</strong> JavaScript, CSS, HTML, ReactJS, GitHub</div>
             <div class="info">Developed the front end of a web application called ‘Mood’ within 24 hours at 
@@ -157,6 +162,7 @@ export default class Projects extends Component {
           <li className={ smartMirror ? "project-item highlight" : "project-item" }>
             <span></span>
             <div class="title">Raspberry Pi Smart Mirror</div> {/*Utilized progect management app, proficient in the use of*/}
+            <div className="date-mobile">December 2019 - January 2020</div>
             <div class="location">Personal Project</div>
             <div className="project-skills"><strong>Skills:</strong> Python, HTML, CSS, Raspberry Pi, CLI (SSH)</div>
             <div class="info">Built interactive mirror during my two week winter break. Due to this time constraint, I
@@ -175,6 +181,7 @@ export default class Projects extends Component {
           <li className={ wikiMediator ? "project-item highlight" : "project-item" }>
             <span></span>
             <div class="title">WikiMediator</div>
+            <div className="date-mobile">November 2019 - December 2019</div>
             <div class="location">Class Project</div>
             <div className="project-skills"><strong>Skills:</strong> Java, API, Threading, GitHub, IntelliJ IDEA</div>
             <div class="info">Used an application program interface (API) to interface with Wikipedia, to get pages and answer queries. Also implemented a client-server pattern for allowing users to interact with the service implementation. Through this project, gained experience with: using external libraries and API’s for data processing, implementing concurrent processing of related operations, implementing core computing abstractions such as caching, and parsing and executing structured queries. We used Unit to test our functions and to check our code coverage. We used the IntelliJ IDEA debugger to find errors in the program, and GitHub for version control between partner.</div>
@@ -189,6 +196,7 @@ export default class Projects extends Component {
           <li className={ kamino ? "project-item highlight" : "project-item" }>
             <span></span>
             <div class="title">Kamino Game</div>
+            <div className="date-mobile">October 2019 - November 2019</div>
             <div class="location">Class Project</div>
             <div className="project-skills"><strong>Skills:</strong> Java, Optimization, Game Development, GitHub, IntelliJ IDEA</div>
             <div class="info">Implemented a “Graph” abstract data type (ADT) by using “vertices” and “edges” and added several associated operations so that this ADT could be integrated in a “Kamino Game” which involves hunting for a missing spaceship by searching through all the planets in space. Through this project we learned about the concept of encapsulation, interfaces, Java Generics, graphs and their representation, and graph algorithms to optimize our program. We then used JUnit to test the correctness four code, checking accuracy as well as code coverage, used the IntelliJ IDEA debugger to pinpoint the source of our errors, and GitHub for version control between partner.</div>
@@ -203,6 +211,7 @@ export default class Projects extends Component {
           <li className={ riscMachine ? "project-item highlight" : "project-item" }>
             <span></span>
             <div class="title">DE1-SoC Simple Risc Machine</div>
+            <div className="date-mobile">October 2019 - November 2019</div>
             <div class="location">Class Project</div>
             <div className="project-skills"><strong>Skills:</strong> Verilog, ModelSim, Quartus, GitHub</div>
             <div class="info">Built a Turing complete RISC machine programmed with Verilog using ModelSim and Quartus over the course of multiple weeks. This machine could compute any calculation given enough time and memory. To create this machine we used RAM modules, finite state machines and program counters.</div>
@@ -217,6 +226,7 @@ export default class Projects extends Component {
           <li className={ surveyOpti ? "project-item highlight" : "project-item" }>
             <span></span>
             <div class="title">Survey Optimization Algorithm</div>
+            <div className="date-mobile">September 2019 - November 2019</div>
             <div class="location">Student Design Team - UBC Unmanned Aircraft Systems (UAS)</div>
             <div className="project-skills"><strong>Skills:</strong> Python, Optimization, GitHub</div>
             <div class="info">Developed an algorithm in 
@@ -239,6 +249,7 @@ export default class Projects extends Component {
           <li className={ calculator ? "project-item highlight" : "project-item" }>
             <span></span>
             <div class="title">iOS Calculator Application</div>
+            <div className="date-mobile">May 2019 - July 2019</div>
             <div class="location">Personal Project</div>
             <div className="project-skills"><strong>Skills:</strong> Swift, iOS App Development, GitHub</div>
             <div class="info">Developed an advanced calculator application for iOS which could compute complex equations. Inspired by the TI-nspire, functionality and usability were the top priorities. Gained experience working in Swift and with storyboards.</div>

@@ -193,13 +193,55 @@
   margin-bottom: 10px;
 }
 
+.date-mobile {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .projects-section ul:before {
-    margin-left: 165px;
+    display: none;
+  }
+
+  .projects-section ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .projects-section ul li {
-    margin-left: 215px;
+    margin: 0px 0px 10px 0px;
+    width: 90%;
+  }
+
+  .projects-section ul li > span {
+    display: none;
+  }
+
+  .projects-section ul li > span:before {
+    display: none;
+  }
+
+  .projects-section ul li .date span {
+    display: none;
+  }
+
+  .title {
+    line-height: 50px;
+    margin-left: 0px;
+    background-color: var(--theme-color);
+    text-align: center;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  .date-mobile {
+    display: inline-block;
+    color: white;
+    text-align: end;
+    font-size: 18px;
+    margin: 5px 0px 5px 0px;
+    width: 100%;
   }
 
   .project-image-container {
