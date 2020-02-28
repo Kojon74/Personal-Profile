@@ -1,3 +1,8 @@
+.highlight {
+  background-color: orange;
+  border-color: black;
+}
+
 .projects-section {
   position: relative;
   height: auto;
@@ -14,6 +19,11 @@
   margin: 0;
   padding: 0;
   position: relative;
+}
+
+.project-item {
+  border-radius: 5px;
+  margin-right: 50px;
 }
 
 .projects-section ul:before {
@@ -71,25 +81,65 @@
   color: white;
 }
 
+.project-organize {
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-organize-skill {
+  margin-top: auto;
+  margin-bottom: auto;
+  border: thin solid;
+  border-radius: 5px;
+  text-align: center;
+  margin-left: 10px;
+  line-height: 40px;
+  width: max-content;
+  height: 40px;
+  position: relative;
+}
+
+.project-organize-skill:hover {
+  background-color: var(--theme-color);
+  color: black;
+  border-color: black;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.project-organize-skill div {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 .title {
-  margin-top: 0px;
+  margin: 0px 0px 5px 10px;
   color: white;
   font-size: 25px;
   font-weight: 300;
 }
 
 .location {
-  color: var(--theme-color);
+  margin: 5px 0px 5px 10px;
+  color: white;
   font-size: 20px;
 }
 
+.project-skills {
+  margin: 5px 0px 5px 10px;
+  color: white;
+}
+
 .info {
-  color: #888;
+  margin-left: 10px;
+  color: #666;
   width: 90%;
 }
 
 .website {
-  margin-top: 50px;
+  margin: 50px 0px 15px 10px;
   color: #ccc;
   width: 90%;
 }
@@ -98,8 +148,17 @@
   color: var(--theme-color);
 }
 
+.website-highlighted {
+  margin: 50px 0px 15px 10px;
+  color: #ddd;
+  width: 90%;
+}
+
+.website-highlighted:hover {
+  color: black;
+}
+
 .project-image-container {
-  margin-top: 10px;
   width: 90%;
   height: auto;
   position: relative;
@@ -110,7 +169,22 @@
 
 .project-image {
   width: 40%;
-  margin-top: 10px;
+  margin: 10px 0px 15px 0px;
+}
+
+.project-image:hover {
+  cursor: pointer;
+}
+
+.project-modal {
+  width: 70vw;
+  max-width: none;
+}
+
+.project-modal-image {
+  width: 90%;
+  display: block;
+  margin: auto;
 }
 
 .date {

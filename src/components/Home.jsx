@@ -14,7 +14,7 @@ export default class Home extends Component {
   }
 
   componentDidMount() {
-    const text = ['software developer', 'problem solver', 'determined worker', 'technology enthusiast'];
+    const text = ['software developer', 'innovator', 'problem solver', 'determined worker', 'technology enthusiast'];
     let letterIndex = 0;
     let wordIndex = 0;
     let currentText = '';
