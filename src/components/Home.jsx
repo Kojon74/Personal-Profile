@@ -46,7 +46,7 @@ export default class Home extends Component {
   render() {
     return (
       <div className="home-section" id="home">
-        <Image src="assets/desk-pic.jpg" className="desk-pic" />
+        <Image src="assets/Backgrounds/desk-pic.jpg" className="desk-pic" />
         <h2 className="name">Ken Johnson</h2>
         <div className="intro-container">
           <div className="intro-1">I am a </div>

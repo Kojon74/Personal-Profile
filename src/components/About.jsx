@@ -6,7 +6,7 @@ export default class About extends Component {
   render() {
     return (
       <div className="about-section" id="about">
-        <Image className="yokohama-wallpaper" src="assets/Yokohama-wallpaper.jpg" />
+        <Image className="yokohama-wallpaper" src="assets/Backgrounds/Yokohama-wallpaper.jpg" />
         <div className="about-me-container">
           <div className="about-me"><span className="highlighted-text">Success</span> is achieved by  
             <span className="highlighted-text"> ordinary</span> people with <span className="highlighted-text">

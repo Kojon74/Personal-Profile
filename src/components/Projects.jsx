@@ -48,9 +48,9 @@ export default class Projects extends Component {
     const mood = (this.state.JavaScript || this.state.ReactJS || this.state.WebApp || this.state.Git);
     const smartMirror = false;
     const wikiMediator = (this.state.Java || this.state.Git);
-    const kamino = (this.state.Java || this.state.Java);
+    const kamino = (this.state.Java || this.state.Git);
     const riscMachine = (this.state.Git);
-    const surveyOpti = (this.state.Python);
+    const surveyOpti = (this.state.Python || this.state.Git);
     return (
       <div class="projects-section" id="projects">
         <h1 class="page-title">Technical Experience</h1>
@@ -218,7 +218,7 @@ export default class Projects extends Component {
             <span></span>
             <div class="title">Survey Optimization Algorithm</div>
             <div class="location">Student Design Team - UBC Unmanned Aircraft Systems (UAS)</div>
-            <div className="project-skills"><strong>Skills:</strong> Python, Optimization, GitLab</div>
+            <div className="project-skills"><strong>Skills:</strong> Python, Optimization, GitHub</div>
             <div class="info">Developed an algorithm in 
               Python which takes a number of waypoints that the drone must fly through, and finds the shortest 
               route through every point which covers the least distance. Applied a simulated 

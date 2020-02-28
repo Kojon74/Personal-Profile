@@ -126,18 +126,17 @@
 @media screen and (max-width: 768px) {
   .name {
     top: 32%;
-    left: 51%;
+    left: 52%;
     font-size: 10vw;
   }
 
-  .intro-1 {
-    display: block;
-    margin: auto;
-  }
-
   .intro-container {
-    top: 50%;
-    font-size: 4vw;
+    top: 47%;
+    left: 52%;
+    font-size: 5vw;
+    height: 7vh;
+    text-align: center;
+    width: 80%;
   }
 
   .intro-1 {
@@ -147,5 +146,9 @@
 
   .intro {
     text-align: center;
+  }
+
+  .intro::after {
+    margin: 1.6vw 0px 0px 2px;
   }
 }
