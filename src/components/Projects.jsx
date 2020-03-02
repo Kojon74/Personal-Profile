@@ -41,8 +41,10 @@ export default class Projects extends Component {
   }
   
   render() {
-    const personalPortfolio = (this.state.JavaScript || this.state.ReactJS || this.state.WebApp || this.state.Git);
+    const urlearn = (this.state.Python || this.state.Git);
     const uasFrontEnd = (this.state.JavaScript || this.state.ReactJS ||this.state.WebApp || this.state.Git);
+    const rPiController = (this.state.Python || this.state.Swift || this.state.iOSApp || this.state.Git);
+    const personalPortfolio = (this.state.JavaScript || this.state.ReactJS || this.state.WebApp || this.state.Git);
     const imageFilter = (this.state.Cpp || this.state.Git);
     const dancingBiped = (this.state.Python || this.state.Git);
     const mood = (this.state.JavaScript || this.state.ReactJS || this.state.WebApp || this.state.Git);
@@ -70,6 +72,18 @@ export default class Projects extends Component {
         </div>
         <ul>
           {/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/}
+          <li className={ urlearn ? "project-item highlight" : "project-item" }>
+            <span></span>
+            <div class="title">Personalized Language Learning</div>
+            <div className="date-mobile">February 2020 - Present</div>
+            <div class="location">Personal Project</div>
+            <div className="project-skills"><strong>Skills:</strong> Python, Google Cloud Engine, GitHub</div>
+            <div class="info">Created an application that takes a URL and a target language as input parameters and scans the url page for text. The program then identifies words of interest and translates this list of words to the target language specified using the Google Cloud Translation API. The goal is then to create a set of flashcards using this list of words so that users can tailor their studying of a new subject to a specific topic.</div>
+            <div class="date">
+              <span>Present -<br />February 2020</span>
+            </div>
+          </li>
+          {/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/}
           <li className={ uasFrontEnd ? "project-item highlight" : "project-item" }>
             <span></span>
             <div class="title">Front End Development</div>
@@ -86,6 +100,21 @@ export default class Projects extends Component {
             </div>
             <div class="date">
               <span>Present -<br />November 2019</span>
+            </div>
+          </li>
+          {/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/}
+          <li className={ rPiController ? "project-item highlight" : "project-item" }>
+            <span></span>
+            <div class="title">Raspberry Pi Autonomous Robot & iOS Controller</div>
+            <div className="date-mobile">February 2020 - March 2020</div>
+            <div class="location">Class Project</div>
+            <div className="project-skills"><strong>Skills:</strong> Swift, Python, iOS App Development, Firebase, Raspberry Pi, GitHub</div>
+            <div class="info">Individually built an iOS application to control a Raspberry Pi powered robot as an additional feature for a class project. Used Firebase’s database to interface between the RPi and the iOS device. Developed the iOS application in Swift, using Xcode and the RPi code using Python. Other features of our car included driving autonomously by following a line through the use of reflective optical sensors.</div>
+            <div className="project-image-container">
+              <img className="project-image" src="assets/rpi-controller.png" onClick={() => {this.handleTrue("show"); this.setModal("assets/rpi-controller.jpeg", "iOS Raspberry Pi Controller - In Progress");}}/>
+            </div>
+            <div class="date">
+              <span>March 2020 -<br />February 2020</span>
             </div>
           </li>
           {/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/}
