@@ -111,7 +111,7 @@ export default class Projects extends Component {
             <div className="project-skills"><strong>Skills:</strong> Swift, Python, iOS App Development, Firebase, Raspberry Pi, GitHub</div>
             <div class="info">Individually built an iOS application to control a Raspberry Pi powered robot as an additional feature for a class project. Used Firebase’s database to interface between the RPi and the iOS device. Developed the iOS application in Swift, using Xcode and the RPi code using Python. Other features of our car included driving autonomously by following a line through the use of reflective optical sensors.</div>
             <div className="project-image-container">
-              <img className="project-image" src="assets/rpi-controller.png" onClick={() => {this.handleTrue("show"); this.setModal("assets/rpi-controller.jpeg", "iOS Raspberry Pi Controller - In Progress");}}/>
+              <img className="project-image" src="assets/rpi-controller.jpeg" onClick={() => {this.handleTrue("show"); this.setModal("assets/rpi-controller.jpeg", "iOS Raspberry Pi Controller - In Progress");}}/>
             </div>
             <div class="date">
               <span>March 2020 -<br />February 2020</span>
