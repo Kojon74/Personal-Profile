@@ -77,7 +77,7 @@ export default class Projects extends Component {
             <div class="title">Personalized Language Learning</div>
             <div className="date-mobile">February 2020 - Present</div>
             <div class="location">Personal Project</div>
-            <div className="project-skills"><strong>Skills:</strong> Python, Google Cloud Engine, GitHub</div>
+            <div className="project-skills"><strong>Skills:</strong> Python, Google Cloud API, GitHub</div>
             <div class="info">Created an application that takes a URL and a target language as input parameters and scans the url page for text. The program then identifies words of interest and translates this list of words to the target language specified using the Google Cloud Translation API. The goal is then to create a set of flashcards using this list of words so that users can tailor their studying of a new subject to a specific topic.</div>
             <div class="date">
               <span>Present -<br />February 2020</span>
