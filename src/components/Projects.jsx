@@ -43,6 +43,7 @@ export default class Projects extends Component {
   render() {
     const urlearn = (this.state.Python || this.state.Git);
     const uasFrontEnd = (this.state.JavaScript || this.state.ReactJS ||this.state.WebApp || this.state.Git);
+    const ambrosePortfolio = (this.state.JavaScript || this.state.ReactJS || this.state.WebApp || this.state.Git);
     const rPiController = (this.state.Python || this.state.Swift || this.state.iOSApp || this.state.Git);
     const personalPortfolio = (this.state.JavaScript || this.state.ReactJS || this.state.WebApp || this.state.Git);
     const imageFilter = (this.state.Cpp || this.state.Git);
@@ -79,6 +80,10 @@ export default class Projects extends Component {
             <div class="location">Personal Project</div>
             <div className="project-skills"><strong>Skills:</strong> Python, Google Cloud API, GitHub</div>
             <div class="info">Created an application that takes a URL and a target language as input parameters and scans the url page for text. The program then identifies words of interest and translates this list of words to the target language specified using the Google Cloud Translation API. The goal is then to create a set of flashcards using this list of words so that users can tailor their studying of a new subject to a specific topic.</div>
+            <a className={ urlearn ? "website-highlighted" : "website" } href="https://github.com/Kojon74/Personalized-Language-Learning" target="_blank">https://github.com/Kojon74/Personalized-Language-Learning</a>
+            <div className="project-image-container">
+              <img className="project-image" src="assets/Projects/urlearn.png" onClick={() => {this.handleTrue("show"); this.setModal("assets/Projects/urlearn.png", "Homepage");}}/>
+            </div>
             <div class="date">
               <span>Present -<br />February 2020</span>
             </div>
@@ -96,10 +101,28 @@ export default class Projects extends Component {
               route the drone will take on a map. The user can then either send the drone off to start or it 
               can re-calculate a new path. Worked with Docker to run our server on as well as GitLab as our main means of source control.</div>
             <div className="project-image-container">
-              <img className="project-image" src="assets/Projects/UAS-frontend.png" onClick={() => {this.handleTrue("show"); this.setModal("assets/Projects/UAS-frontend.png", "Front end design - in progress");}}/>
+              <video className="project-image" src="assets/Projects/UAS.MP4" onClick={() => {this.handleTrue("show"); this.setModal("assets/Projects/UAS.MP4", "Front end design - in progress");}} autoplay="autoplay" muted />
             </div>
             <div class="date">
               <span>Present -<br />November 2019</span>
+            </div>
+          </li>
+          {/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/}
+          <li className={ ambrosePortfolio ? "project-item highlight" : "project-item" }>
+            <span></span>
+            <div class="title">Portfolio Website</div>
+            <div className="date-mobile">March 2020</div>
+            <div class="location">Personal Project</div>
+            <div className="project-skills"><strong>Skills:</strong> JavaScript, CSS, HTML, ReactJS, CLI, GitHub</div>
+            <div class="info">Created portfolio websites for my friends using ReactJS and gaining exposure to different tools 
+              and designs. Learned to constantly communicate with client to give them what they want.</div>
+            <a className={ personalPortfolio ? "website-highlighted" : "website" } href="https://github.com/Kojon74/Ambrose-Portfolio" target="_blank">https://github.com/Kojon74/Ambrose-Portfolio</a>
+            <div className="project-image-container">
+              <img className="project-image" src="assets/Projects/ambrose-portfolio-1.png" onClick={() => {this.handleTrue("show"); this.setModal("assets/Projects/ambrose-portfolio-1.png", "Desktop home page");}}/>
+              <img className="project-image" src="assets/Projects/ambrose-portfolio-2.png" onClick={() => {this.handleTrue("show"); this.setModal("assets/Projects/ambrose-portfolio-2.png", "Mobile experiences page");}}/>
+            </div>
+            <div class="date">
+              <span>March 2020</span>
             </div>
           </li>
           {/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/}
@@ -111,7 +134,7 @@ export default class Projects extends Component {
             <div className="project-skills"><strong>Skills:</strong> Swift, Python, iOS App Development, Firebase, Raspberry Pi, GitHub</div>
             <div class="info">Individually built an iOS application to control a Raspberry Pi powered robot as an additional feature for a class project. Used Firebase’s database to interface between the RPi and the iOS device. Developed the iOS application in Swift, using Xcode and the RPi code using Python. Other features of our car included driving autonomously by following a line through the use of reflective optical sensors.</div>
             <div className="project-image-container">
-              <img className="project-image" src="assets/rpi-controller.jpeg" onClick={() => {this.handleTrue("show"); this.setModal("assets/rpi-controller.jpeg", "iOS Raspberry Pi Controller - In Progress");}}/>
+              <video className="project-image" src="assets/Projects/walle.mp4" onClick={() => {this.handleTrue("show"); this.setModal("assets/Projects/walle.mp4", "Autonomous line following robot with option to manually control");}} autoplay="autoplay" muted />
             </div>
             <div class="date">
               <span>March 2020 -<br />February 2020</span>
