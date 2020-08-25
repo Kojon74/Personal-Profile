@@ -12,6 +12,22 @@ export default class CustomNavbar extends Component {
     };
   }
 
+  componentDidMount() {
+    window.addEventListener('scroll', () => {
+      const isTop = window.scrollY > 0;
+      const navbar = document.getElementById('navbar-section');
+      if (isTop) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    })
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll');
+  }
+
   toggleClass() {
     const currentState = this.state.active;
     this.setState({ active: !currentState });
@@ -19,14 +35,14 @@ export default class CustomNavbar extends Component {
 
   render() {
     return (
-      <Navbar className="navbar-section">
+      <Navbar id="navbar-section" className="navbar-section">
           <Nav.Item>
             <Nav.Link className="ken-johnson" href="/" eventKey="1">Ken Johnson</Nav.Link>
           </Nav.Item>
           <div className={ this.state.active ? "nav-links-container" : "nav-links-container-active" }>
             <Link className="nav-links-navbar" onClick={this.toggleClass} activeClass="active" to="home" spy={true} smooth={true} offset={-70} duration={500}>Home</Link>
             <Link className="nav-links-navbar" onClick={this.toggleClass} activeClass="active" to="about" spy={true} smooth={true} offset={-70} duration={500}>About</Link>
-            <Link className="nav-links-navbar" onClick={this.toggleClass} activeClass="active" to="projects" spy={true} smooth={true} offset={-70} duration={500}>Projects</Link>
+            <Link className ="nav-links-navbar" onClick={this.toggleClass} activeClass="active" to="projects" spy={true} smooth={true} offset={-70} duration={500}>Projects</Link>
             <Link className="nav-links-navbar" onClick={this.toggleClass} activeClass="active" to="contact" spy={true} smooth={true} offset={-70} duration={500}>Contact</Link>
             <div className="linkedin-github">
               <a href="https://www.linkedin.com/in/ken-john/" target="_blank">

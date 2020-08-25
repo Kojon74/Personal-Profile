@@ -226,11 +226,14 @@
     display: none;
   }
 
+  .project-item {
+    border: solid;
+    border-color: var(--theme-color);
+  }
+
   .title {
     line-height: 50px;
     margin-left: 0px;
-    border: solid;
-    border-color: var(--theme-color);
     text-align: center;
     border-radius: 5px;
     width: 100%;
@@ -241,26 +244,26 @@
     color: white;
     text-align: end;
     font-size: 18px;
-    margin: 5px 0px 5px 0px;
+    margin: 5px 0px 5px -10px;
     width: 100%;
     font-weight: bold;
   }
 
   .location {
     font-weight: 300;
-    margin: 5px 0px 10px 0px;
+    margin: 5px 0px 10px 10px;
   }
 
   .project-skills {
-    margin-left: 0px;
+    margin-left: 10px;
   }
 
   .info {
-    margin-left: 0px;
+    margin-left: 10px;
   }
 
   .website {
-    margin-left: 0;
+    margin-left: 10;
   }
 
   .project-image-container {

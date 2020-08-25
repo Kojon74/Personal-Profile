@@ -3,86 +3,40 @@
   position: relative;
 }
 
-.yokohama-wallpaper {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 100%;
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
-
-.about-me-container {
+.parallax {
   position: absolute;
-  left: 5%;
-  top: 20px;
-  width: 35vw;
-  z-index: 1;
-  border-style: dashed;
-  border-width: thick;
-  border-radius: 15px;
-  border-color: white;
+  width: 100%;
+  height: 15%;
 }
 
-.about-me-container::after {
-  content: "";
-  background-color: black;
-  opacity: 0.2;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: -1;
-  border-radius: 5px;
-
-}
-
-.about-me {
-  margin: 5px 5px 5px 5px;
-  color: white;
-  font: 500 27px sans-serif;
+.parallax-content {
+  margin: auto;
   text-align: center;
-  z-index: 2;
-}
-
-.highlighted-text {
-  color: var(--theme-color);
-}
-
-.details {
-  margin: 5px 5px 5px 5px;
-
+  font-size: 60px;
+  line-height: 15vh;
   color: white;
-  font: 20px sans-serif;
-
-  z-index: 2;
 }
 
-.about-carousel {
-  position: absolute;
-  right: 4%;
-  bottom: 50px;
-  height: 50vh;
-  max-width: 50vw;
-  border-radius: 10px;
+.about-section .left {
+  height: 85%;
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+  padding: 70px;
+  font-size: 25px;
+  color: white;
 }
 
-.about-carousel-images {
-  height: 50vh;
+.about-section .right {
+  height: 85%;
+  width: 50%;
+  float: right;
+}
+
+.about-section .right .top {
+  
 }
 
 @media screen and (max-width: 768px) {
-  .about-me-container {
-    top: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-  }
-  .about-me-container::after {
-    opacity: 0.5;
-  }
-  .about-carousel {
-    display: none;
-  }
+
 }

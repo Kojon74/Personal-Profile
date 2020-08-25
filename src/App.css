@@ -1,6 +1,7 @@
 Body {
   --theme-color: orange;
   background-color: black;
+  font-family: Verdana, sans-serif;
 }
 
 .app {

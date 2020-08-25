@@ -43,6 +43,7 @@ export default class Projects extends Component {
   render() {
     const urlearn = (this.state.Python || this.state.Git);
     const uasFrontEnd = (this.state.JavaScript || this.state.ReactJS ||this.state.WebApp || this.state.Git);
+    const cs50 = (this.state.Python);
     const ambrosePortfolio = (this.state.JavaScript || this.state.ReactJS || this.state.WebApp || this.state.Git);
     const rPiController = (this.state.Python || this.state.Swift || this.state.iOSApp || this.state.Git);
     const personalPortfolio = (this.state.JavaScript || this.state.ReactJS || this.state.WebApp || this.state.Git);
@@ -79,7 +80,7 @@ export default class Projects extends Component {
             <div className="date-mobile">February 2020 - Present</div>
             <div class="location">Personal Project</div>
             <div className="project-skills"><strong>Skills:</strong> Python, Google Cloud API, GitHub</div>
-            <div class="info">Created an application that takes a URL and a target language as input parameters and scans the url page for text. The program then identifies words of interest and translates this list of words to the target language specified using the Google Cloud Translation API. The goal is then to create a set of flashcards using this list of words so that users can tailor their studying of a new subject to a specific topic.</div>
+            <div class="info">Created an application that reads a URL and a target language as input parameters and scans the URL page for text. The program then identifies words of interest and translates this list of words to the target language specified using the Google Cloud Translation API. The goal is then to create a set of flashcards using this list of words so that users can tailor their studying of a new language based on important words specific to a topic of interest.</div>
             <a className={ urlearn ? "website-highlighted" : "website" } href="https://github.com/Kojon74/Personalized-Language-Learning" target="_blank">https://github.com/Kojon74/Personalized-Language-Learning</a>
             <div className="project-image-container">
               <img className="project-image" src="assets/Projects/urlearn.png" onClick={() => {this.handleTrue("show"); this.setModal("assets/Projects/urlearn.png", "Homepage");}}/>
@@ -95,13 +96,32 @@ export default class Projects extends Component {
             <div className="date-mobile">November 2019 - Present</div>
             <div class="location">Student Design Team - UBC Unmanned Aircraft Systems (UAS)</div>
             <div className="project-skills"><strong>Skills:</strong> JavaScript, CSS, HTML, ReactJS, Docker, CLI, GitLab</div>
-            <div class="info">Integrated the survey optimization algorithm (referred to below) 
-              with the UBC UAS front end web server using React. Designed 
-              an interface allowing users to call the survey optimization method which then displays the 
-              route the drone will take on a map. The user can then either send the drone off to start or it 
-              can re-calculate a new path. Worked with Docker to run our server on as well as GitLab as our main means of source control.</div>
+            <div class="info">Integrated the survey optimization algorithm (described below) 
+              with the UBC UAS front end web server using the ReactJS library. Designed 
+              an interface allowing users to call the survey optimization algorithm which then displays the 
+              route that an unmanned aircraft system (drone) will take on a map. The user can then either start the drone on this route or use the algorithm to 
+              re-calculate a different path. Worked with Docker to run our server on as well as GitLab as our main means of source control.</div>
             <div className="project-image-container">
               <video className="project-image" src="assets/Projects/UAS.MP4" onClick={() => {this.handleTrue("show"); this.setModal("assets/Projects/UAS.MP4", "Front end design - in progress");}} autoplay="autoplay" muted />
+            </div>
+            <div class="date">
+              <span>Present -<br />November 2019</span>
+            </div>
+          </li>
+          {/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/}
+          <li className={ cs50 ? "project-item highlight" : "project-item" }>
+            <span></span>
+            <div class="title">HarvardX's Introduction to Artificial Intelligence with Python</div>
+            <div className="date-mobile">March 2020 - May 2020</div>
+            <div class="location">Online Class - HarvardX</div>
+            <div className="project-skills"><strong>Skills:</strong> Python, TensorFlow, Keras</div>
+            <div class="info">
+              Explored the concepts of algorithms at the foundation of modern artificial intelligence, diving into the ideas that give rise to technologies like game-playing engines, handwriting recognition, and machine translation.
+              Gained exposure to the theory behind graph search algorithms, classification, optimization, reinforcement learning, and other topics in artificial intelligence and machine learning and incorperated them into the many projects including: an unbeatable Tic-Tac-Toe and Nim AI, a Minesweeper and crossword solver, a pageranking algorithm, a traffic sign classifier, a question answerer, and many others.
+            </div>
+            <div className="project-image-container">
+              <video className="project-image" src="assets/Projects/minesweeper.mov" onClick={() => {this.handleTrue("show"); this.setModal("assets/Projects/minesweeper.mov", "Created an AI to play Minesweeper using a knowledge base and inferences");}} autoplay="autoplay" muted />
+              <video className="project-image" src="assets/Projects/nim.mov" onClick={() => {this.handleTrue("show"); this.setModal("assets/Projects/nim.mov", "Created an AI to play Nim using reinforced learning");}} autoplay="autoplay" muted />
             </div>
             <div class="date">
               <span>Present -<br />November 2019</span>
@@ -132,7 +152,7 @@ export default class Projects extends Component {
             <div className="date-mobile">February 2020 - March 2020</div>
             <div class="location">Class Project</div>
             <div className="project-skills"><strong>Skills:</strong> Swift, Python, iOS App Development, Firebase, Raspberry Pi, GitHub</div>
-            <div class="info">Individually built an iOS application to control a Raspberry Pi powered robot as an additional feature for a class project. Used Firebase’s database to interface between the RPi and the iOS device. Developed the iOS application in Swift, using Xcode and the RPi code using Python. Other features of our car included driving autonomously by following a line through the use of reflective optical sensors.</div>
+            <div class="info">Built an iOS application to control a Raspberry Pi powered robot as an additional feature for a class project. Used Firebase’s database to interface between the RPi and the iOS device. Developed the iOS application in Swift, using Xcode and the RPi code using Python. Other features of our car included driving autonomously by following a line through the use of reflective optical sensors.</div>
             <div className="project-image-container">
               <video className="project-image" src="assets/Projects/walle.mp4" onClick={() => {this.handleTrue("show"); this.setModal("assets/Projects/walle.mp4", "Autonomous line following robot with option to manually control");}} autoplay="autoplay" muted />
             </div>

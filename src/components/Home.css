@@ -1,154 +1,70 @@
 .home-section {
-  --time-slide: 2s;
-  --time-name: calc(var(--time-slide) + 4s);
-  --time-name-color: calc(var(--time-slide) + 2s);
-  --time-intro: calc(var(--time-name) + 2s);
-  --time-nav: calc(var(--time-intro) + 3s);
-  position: relative;
   height: 100vh;
-  width: 100vw;
-  max-width: 100%;
-  overflow-x: hidden;
-  overflow-y: hidden;
-}
-
-@keyframes nav-appear {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.desk-pic {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 100%;
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
-
-.name {
-  animation: appear var(--time-name) ease, 
-    color 5s var(--time-name-color) ease infinite alternate;
-  color: white;
-  font-size: 80px;
-  font-size: 7vw;
-  letter-spacing: 3px;
-  position: absolute;
-  top: 54%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: inline-block;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  width: 80%;
-  text-align: center;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background-image: url(./../assets/Backgrounds/desk-pic.jpg);
+  background-color: #000;
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
 
-.intro-container {
+.home-section .intro {
   height: auto;
   width: auto;
-  position: absolute;
-  top: 63%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 41%;
-  display: inline-block;
-
-  animation: appear var(--time-intro) ease;
+  text-align: center;
   color: white;
-  font-size: 25px;
-  font-size: 3.3vw;
-  
 }
 
-.intro-1 {
-  display: inline;
-}
 
-.intro {
-  display: inline;
+.home-section .intro .name {
+  width: auto;
+  height: auto;
+  font-size: 60px;
   position: relative;
-  margin-left: 0px;
-  color: var(--theme-color);
-  
 }
 
-.intro::after {
-  content: "";
+.home-section .intro .name::before {
+  height: 2px;
+  width: 100%;
   position: absolute;
-  width: 1px;
-  height: 80%;
-  border-right: 2px solid white;
-  margin-top: 1vw;
-  margin-left: 3px;
-  animation: blink 1s infinite linear;
+  content: '';
+  background: orange;
 }
 
-@keyframes blink {
-  0% {
-    opacity: 0;
-  } 50% {
-    opacity: 0;
-  } 51% {
-    opacity: 1;
-  } 100% {
-    opacity: 1;
-  }
+.home-section .intro .name::after {
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  background: orange;
 }
 
-@keyframes appear {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.home-section .intro .desc {
+  width: auto;
+  height: auto;
+  font-size: 27px;
+  padding-top: 10px;
+  color: orange;
 }
 
-@keyframes color {
-  0% {
-    color: white;
-  } 
-  100% {
-    color: var(--theme-color);
-  }
+.home-section .learn-more {
+  width: auto;
+  height: auto;
+  position: absolute;
+  text-align: center;
+  font-size: 25px;
+  color: white !important;
+  bottom: 15px;
 }
 
-@media screen and (max-width: 768px) {
-  .name {
-    top: 32%;
-    left: 52%;
-    font-size: 10vw;
-  }
-
-  .intro-container {
-    top: 47%;
-    left: 52%;
-    font-size: 5vw;
-    height: 7vh;
-    text-align: center;
-    width: 80%;
-  }
-
-  .intro-1 {
-    display: block;
-    text-align: center;
-  }
-
-  .intro {
-    text-align: center;
-  }
-
-  .intro::after {
-    margin: 1.6vw 0px 0px 2px;
-  }
+.home-section .learn-more:hover {
+  cursor: pointer;
 }
